@@ -21,6 +21,7 @@ class BaseDataset(torch.utils.data.Dataset):
     
     def __getitem__(self, idx: int) -> Dict[str, torch.Tensor]:
         """
+        原dp中的BaseImageDataset
         output:
             obs: 
                 key: T, *
