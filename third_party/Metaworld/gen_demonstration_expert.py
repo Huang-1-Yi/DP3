@@ -178,10 +178,10 @@ def main(args):
 
 	# save data
  	###############################
-	创建 Zarr 存储结构：
-		data 组存储实际数据
-		meta 组存储元数据
-    # create zarr file
+	# 创建 Zarr 存储结构：
+	# 	data 组存储实际数据
+	# 	meta 组存储元数据
+    # # create zarr file
 	zarr_root = zarr.group(save_dir)
 	zarr_data = zarr_root.create_group('data')
 	zarr_meta = zarr_root.create_group('meta')

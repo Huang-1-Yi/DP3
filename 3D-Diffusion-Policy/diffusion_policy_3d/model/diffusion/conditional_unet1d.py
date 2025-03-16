@@ -63,7 +63,6 @@ class ConditionalResidualBlock1D(nn.Module):
                         n_groups=n_groups),
         ])
 
-        
         self.condition_type = condition_type
 
         cond_channels = out_channels
